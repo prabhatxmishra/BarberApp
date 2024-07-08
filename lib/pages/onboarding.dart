@@ -1,4 +1,6 @@
+import 'package:barber_app/Admin/admin_login.dart';
 import 'package:barber_app/pages/home.dart';
+import 'package:barber_app/pages/signup.dart';
 import 'package:flutter/material.dart';
 
 class Onboarding extends StatefulWidget {
@@ -24,7 +26,7 @@ class _OnboardingState extends State<Onboarding> {
             GestureDetector(
               onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Home()));
+                    MaterialPageRoute(builder: (context) => const SignUp()));
               },
               child: Container(
                 padding:
@@ -42,7 +44,34 @@ class _OnboardingState extends State<Onboarding> {
                   ),
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const AdminLogin()));
+              },
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFdf711a),
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: const Text(
+                  "Login as admin!!",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

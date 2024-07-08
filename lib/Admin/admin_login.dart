@@ -144,8 +144,8 @@ class _AdminLoginState extends State<AdminLogin> {
             style: TextStyle(fontSize: 20),
           )));
         } else {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => BookingAdmin()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const BookingAdmin()));
         }
       });
     });

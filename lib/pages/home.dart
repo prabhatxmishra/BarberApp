@@ -9,11 +9,11 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  String? name, image;
+  String? name;
 
   getdatafromsharedpref() async {
     name = await SharedPreferenceHelper().getUserName();
-    image = await SharedPreferenceHelper().getUserImage();
+    // image = await SharedPreferenceHelper().getUserImage();
     setState(() {});
   }
 
