@@ -1,21 +1,4 @@
-<<<<<<< HEAD
-# BarberApp
-Barber App project
-=======
-# barber_app
+The "Barber app" is a Flutter and Firebase project that facilitates booking barber services. Users can log in as either customers or admins. Customers can book services for their desired time slots, while admins can manage bookings by viewing and removing completed appointments. The app supports customer registration and login, as well as admin login.
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 53d9f68 (project upload)
+To set it up on your system:
+Clone the repo using git clone command. Then in the terminal from project root directory run "flutter pub get" and then "flutter run" command.
